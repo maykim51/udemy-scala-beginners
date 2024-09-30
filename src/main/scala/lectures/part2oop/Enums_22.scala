@@ -1,6 +1,6 @@
-package lectures.part2oop
+package lectures.part2oop_24
 
-object Enums {
+object Enums_22 {
 
   enum Permissions {
     case READ, WRITE, EXECUTE, NONE

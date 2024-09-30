@@ -18,7 +18,7 @@ abstract class MyList[+A] {
   // polymorphic call
   override def toString: String = "[" + printElements + "]"
 
-  // higher-order functions
+  // higher-order functions // todo !!!!!!
   def map[B](transformer: A => B): MyList[B]
   def flatMap[B](transformer: A => MyList[B]): MyList[B]
   def filter(predicate: A => Boolean): MyList[A]
@@ -41,6 +41,7 @@ abstract class MyList[+A] {
   }
 }
 
+// todo - !!!!!
 case object Empty extends MyList[Nothing] {
   def head: Nothing = throw new NoSuchElementException
   def tail: MyList[Nothing] = throw new NoSuchElementException

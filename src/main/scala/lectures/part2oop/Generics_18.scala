@@ -1,9 +1,10 @@
-package lectures.part2oop
+package lectures.part2oop_24
 
-object Generics extends App {
+object Generics_18 extends App {
 
   class MyList[+A] {
     // use the type A
+    // TODO:: important!!
     def add[B >: A](element: B): MyList[B] = ???
     /*
       A = Cat
@@ -28,6 +29,7 @@ object Generics extends App {
   class Cat extends Animal
   class Dog extends Animal
 
+  // todo - COVARIANCE!!! differ by how you write A.
   // 1. yes, List[Cat] extends List[Animal] = COVARIANCE
   class CovariantList[+A]
   val animal: Animal = new Cat
@@ -43,6 +45,7 @@ object Generics extends App {
   val trainer: Trainer[Cat] = new Trainer[Animal]
 
   // bounded types
+  // todo - subtypes of Animal only
   class Cage[A <: Animal](animal: A)
   val cage = new Cage(new Dog)
 

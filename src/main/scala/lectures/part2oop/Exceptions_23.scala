@@ -1,6 +1,6 @@
-package lectures.part2oop
+package lectures.part2oop_24
 
-object Exceptions extends App {
+object Exceptions_23 extends App {
 
   val x: String = null
   //  println(x.length)
@@ -32,6 +32,7 @@ object Exceptions extends App {
 
   println(potentialFail)
 
+  // todo - !!
   // 3. how to define your own exceptions
   class MyException extends Exception
   val exception = new MyException
@@ -40,7 +41,7 @@ object Exceptions extends App {
 
   /*
     1.  Crash your program with an OutOfMemoryError
-    2.  Crash with SOError
+    2.  Crash with SOError (Stackoverflow)
     3.  PocketCalculator
         - add(x,y)
         - subtract(x,y)

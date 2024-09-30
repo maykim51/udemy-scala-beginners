@@ -1,6 +1,6 @@
-package lectures.part2oop
+package lectures.part2oop_24
 
-object CaseClasses extends App {
+object CaseClasses_21 extends App {
 
   /*
     equals, hashCode, toString
@@ -26,7 +26,7 @@ object CaseClasses extends App {
 
   // 5. CCs have companion objects
   val thePerson = Person
-  val mary = Person("Mary", 23)
+  val mary = Person("Mary", 23) // todo - no "new" keyword required!!
 
   // 6. CCs are serializable
   // Akka

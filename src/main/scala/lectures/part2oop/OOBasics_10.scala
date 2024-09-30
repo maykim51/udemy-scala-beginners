@@ -1,10 +1,12 @@
-package lectures.part2oop
+package lectures.part2oop_24
 
 import scala.annotation.tailrec
 
 object OOBasics extends App {
 
   // constructor
+  /** TODO::may  class parameters are NOT FIELDS. should always add `val`! */
+  /** TODO::may age is not a class member, so cannot access like this - person.name */
   class Person(name: String, val age: Int = 0) {
     // body
     val x = 2
@@ -17,7 +19,7 @@ object OOBasics extends App {
     // overloading
     def greet(): Unit = println(s"Hi, I am $name")
 
-    // multiple constructors
+    // multiple constructors //TODO::may "Overloading constructors", but rarely used. because we can set default value
     def this(name: String) = this(name, 0)
     def this() = this("John Doe")
   }

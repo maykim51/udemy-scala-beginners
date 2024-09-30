@@ -1,11 +1,10 @@
 package lectures.part3fp
 
-object HOFsCurries extends App {
+object HOFsCurries_27 extends App {
 
   val superFunction: (Int, (String, (Int => Boolean)) => Int) => (Int => Int) = null
   // higher order function (HOF)
-
-  // map, flatMap, filter in MyList
+  // e.g. map, flatMap, filter in MyList
 
   // function that applies a function n times over a value x
   // nTimes(f, n, x)

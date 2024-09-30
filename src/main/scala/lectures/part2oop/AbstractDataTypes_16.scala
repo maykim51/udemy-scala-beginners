@@ -1,6 +1,6 @@
-package lectures.part2oop
+package lectures.part2oop_24
 
-object AbstractDataTypes extends App {
+object AbstractDataTypes_16 extends App {
 
   // abstract
   abstract class Animal {
@@ -28,7 +28,7 @@ object AbstractDataTypes extends App {
 
   val dog = new Dog
   val croc = new Crocodile
-  croc.eat(dog)
+  croc.eat(dog) // "I'm a croc and I'm eating Canine"
 
   // traits vs abstract classes
   // 1 - traits do not have constructor parameters

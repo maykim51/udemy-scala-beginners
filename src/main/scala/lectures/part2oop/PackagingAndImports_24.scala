@@ -1,11 +1,11 @@
-package lectures.part2oop
+package lectures.part2oop_24
 
 import playground.{PrinceCharming, Cinderella => Princess}
 
 import java.util.Date
 import java.sql.{Date => SqlDate}
 
-object PackagingAndImports extends App {
+object PackagingAndImports_24 extends App {
 
   // package members are accessible by their simple name
   val writer = new Writer("Daniel", "RockTheJVM", 2018)
